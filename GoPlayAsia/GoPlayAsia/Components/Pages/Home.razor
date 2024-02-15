@@ -1,0 +1,42 @@
+﻿@page "/home"
+@inherits LayoutComponentBase
+@using GoPlayAsia.Components.Layout
+@using GoPlayAsia.Components.Pages
+
+<PageTitle>GoPlayAsia: Home </PageTitle>
+
+<NavMenu />
+<div id="home" class="page">
+    <main>
+        <Carousel />
+
+        <div class="container-fluid marketing">
+            <div class="container">
+                <GPAGames />
+                <FeaturedGames />
+                <WelcomeGPA />
+            </div>
+        </div>
+    </main>
+</div>
+<div class="container-fluid footer">
+    <Footer />
+</div>
+
+<!-- Chat Icon -->
+<div class="chat-icon" onclick="toggleChat()">
+    <img src="./img/chat-icon.png" class="img-fluid" alt="Chat Icon">
+</div>
+
+<!-- Chat Form -->
+<div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+        <span class="chat-close" onclick="toggleChat()">&times;</span>
+        <h2>Chat Support</h2>
+    </div>
+    <div class="chat-content">
+        <!-- Your chat form content goes here -->
+        <p>Welcome to our chat support! How can we assist you today?</p>
+    </div>
+</div>
+

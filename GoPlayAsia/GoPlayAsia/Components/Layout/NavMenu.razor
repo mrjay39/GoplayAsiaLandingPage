@@ -1,0 +1,80 @@
+﻿<header class="container-fluid bg-black">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <a href="home" class="navbar-brand d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img src="./img/gpa-logo.png" class="img-fluid logo" alt="GoPlayAsia">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="home" class="nav-link px-2 link-dark">
+                                <i class="fa-solid fa-house"></i> HOME
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link px-2 link-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid explore-icon"></i> Explore
+                            </a>
+                            <ul class="dropdown-menu link-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item  link-dark" href="AboutUs">Who We Are</a></li>
+                                <li><a class="dropdown-item link-dark" href="ourTeam">Our Team</a></li>
+                                <li><a class="dropdown-item link-dark" href="contactUs">Contact Us</a></li>
+                                <li><a class="dropdown-item link-dark" href="FAQ's">FAQ's</a></li>
+                                <li><a class="dropdown-item link-dark" href="PrivacyPolicy">Privacy Policy</a></li>
+                                @* <li><hr class="dropdown-divider"></li> *@
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link px-2 link-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid gpa-icon"></i> GoPlayAsia
+                            </a>
+                            <ul class="dropdown-menu link-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item  link-dark" href="#">Lucky 9</a></li>
+                                <li><a class="dropdown-item  link-dark" href="#">Lucky 4</a></li>
+                                <li><a class="dropdown-item link-dark" href="#">First 3</a></li>
+                                <li><a class="dropdown-item link-dark" href="#">Heads & Tails</a></li>
+                                <li><a class="dropdown-item link-dark" href="#">Big Win</a></li>
+                                <li><a class="dropdown-item link-dark" href="#">Go 12</a></li>
+                                <li><a class="dropdown-item link-dark" href="#">Dice</a></li>
+                                @* <li><hr class="dropdown-divider"></li> *@
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link px-2 link-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid featured-icon"></i> Featured Games
+                            </a>
+                            <ul class="dropdown-menu link-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item  link-dark" href="#">Poker</a></li>
+                                <li><a class="dropdown-item  link-dark" href="#">Sabong</a></li>
+                                <li><a class="dropdown-item link-dark" href="#">Slots</a></li>
+                                <li><a class="dropdown-item link-dark" href="#">Sports</a></li>
+                                <li><a class="dropdown-item link-dark" href="#">Baccarat</a></li>
+                                @* <li><hr class="dropdown-divider"></li> *@
+                            </ul>
+                        </li>
+                       @*  <li class="nav-item">
+                            <a href="#" class="nav-link px-2 link-dark">
+                                <i class="fa-solid poker-card"></i> CASINO
+                            </a>
+                        </li> *@
+                        @* <li class="nav-item">
+                            <a href="#" class="nav-link px-2 link-dark ">
+                                <i class="fa-solid lottery"></i> LOTTERY
+                            </a>
+                        </li> *@
+                        <li class="nav-item loginAndSignUp">
+                            <button type="button" class="btn btn-outline-warning fw-bold me-2" data-bs-toggle="modal" data-bs-target="#logInForm">Login</button>
+                            <button type="button" class="btn btn-outline-warning fw-bold" data-bs-toggle="modal" data-bs-target="#ageConfirmModal">Sign-up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<GoPlayAsia.Components.Layout.Modal.SignUp />

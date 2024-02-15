@@ -1,0 +1,68 @@
+﻿.must-21 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #e10707;
+}
+.login-img {
+    position: absolute;
+    top: -66px;
+    left: -83px;
+}
+.login-bg {
+    background-image: url(./img/login-bg.png)!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.modal-bg {
+    background-image: url(./img/bg-middle.png),linear-gradient(180deg,#281728 20%,rgba(132,31,53,1) 60%,#101019 100%) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.font-80{
+    font-size: 80px;
+}
+.top-23{
+    top:23px;
+}
+.modal-header{border: none !important;}
+.modal-footer{border-top: 1px solid #590c0c}
+.border-bottom-4{border-bottom: 4px solid gold;}
+
+.nav-tabs {
+    border: none !important;
+}
+.nav-tabs .nav-link.active {
+    color: #282828 !important;
+    background-color: gold !important;
+    border-color: gold;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: gold !important;
+    border-radius: 5px;
+}
+.nav-link {
+    padding: 0.2rem .3rem !important;
+    margin: 0 2px !important;
+    color: #c4b18ff2 !important;
+}
+
+@media screen and (max-width: 320px) {
+    #logInForm .login-bg {
+        background-image: url(./img/login-bg.png) !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: 25% 40px;
+        background-size: 137% 93%;
+    }
+
+    #logInForm .login-img {
+        position: absolute;
+        top: 104px;
+        left: -31px;
+    }
+}

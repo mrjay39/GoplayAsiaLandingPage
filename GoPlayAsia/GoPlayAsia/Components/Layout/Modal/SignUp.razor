@@ -1,0 +1,129 @@
+﻿<div class="modal fade border-bottom" id="ageConfirmModal" tabindex="-1" aria-labelledby="ageConfirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-bg border-bottom-4">
+            <div class="modal-header" id="ageConfirmModalLabel">
+                <img src="./img/Pagcor-21.png" class="img-fluid">
+            </div>
+            <div class="modal-body text-center text-white">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="row text-center must-21 align-items-center text-white">
+                        <p>
+                            <span class="d-block w-100 fw-bold position-relative top-23">YOU MUST</span>
+                            <span class="d-block w-100 fw-bold font-80">21</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-block mt-3">
+                    <p class="fw-bold">YEARS OLD AND ABOVE TO REGISTER</p>
+                </div>
+                <div class="container">
+                    <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Exit</button>
+                    <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#logInForm">Yes, I'm 21 or Older'</button>
+                </div>
+            </div>
+            <div class="modal-footer text-white">
+                <p style="text-align: center;">GoPlayAsia Remote Gaming Site is approved and regulated by Philippine Amusement and Gaming Corporation. 2022-2025</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade border-bottom" id="logInForm" tabindex="-1" aria-labelledby="ageConfirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="container p-0">
+            <div class="modal-content modal-bg border-bottom-4">
+                <div class="d-flex">
+                    <div class="col login-bg">
+                        <img src="./img/login-img.png" class="img-fluid login-img">
+                    </div>
+                    <div class="col p-2">
+                        <ul class="nav nav-tabs justify-content-center pt-3" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="loginTab" data-bs-toggle="tab" href="#loginPanel" role="tab" aria-controls="loginPanel" aria-selected="true">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                    <span>Login</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="signUpTab" data-bs-toggle="tab" href="#signUpPanel" role="tab" aria-controls="signUpPanel" aria-selected="false">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <span>Sign Up</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-4" id="tab-content">
+
+                            @*===============================Login Form ==================================== *@
+                            <div class="tab-pane active" id="loginPanel" role="tabpanel" aria-labelledby="loginTab">
+                                <form action="#" class="signin-form">
+                                    <div class="form-group mb-3">
+                                        <label class="label text-white" for="username">Username</label>
+                                        <input id="username" type="text" class="form-control" placeholder="Username" required="">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="label text-white" for="password">Password</label>
+                                        <input id="password" type="password" class="form-control" placeholder="Password" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="form-control btn btn-warning rounded submit px-3">Sign In</button>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <div class="content">
+                                            <label class="checkbox-wrap checkbox-primary mb-0">
+                                                <input type="checkbox" checked="">
+                                                <span class="checkmark text-white">Remember Me</span>
+                                            </label>
+                                        </div>
+                                        <div class="content text-center">
+                                            <a href="#">Forgot Password</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="d-flex">
+                                    <p class="text-center w-100 mb-4 mt-3">
+                                        <span class="text-white">Not a member?</span>
+                                        <a data-toggle="tab" href="#signup">&nbsp;Sign Up</a>
+                                    </p>
+                                </div>
+                            </div>
+                            @*===============================Sign Up Form ==================================== *@
+                            <div class="tab-pane" id="signUpPanel" role="tabpanel" aria-labelledby="signUpTab">
+                                <form action="#" class="signin-form">
+                                    <div class="form-group mb-3">
+                                        <label class="label text-white" for="username">Mobile Number</label>
+                                        <input id="username" type="tel" class="form-control" placeholder="09XX XXX XXXX" required="">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="label text-white" for="password">Affiliate Code</label>
+                                        <input id="password" type="password" class="form-control" placeholder=" Key In (If Any)" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="form-control btn btn-warning rounded submit px-3">Sign Up</button>
+                                    </div>
+                                    <div class="container-fluid p-0">
+                                        <div class="content">
+                                            <label class="checkbox-wrap checkbox-primary mb-0">
+                                                <input type="checkbox" checked="">
+                                                <span class="checkmark text-white">I agree to the Terms and Conditions & Privacy Policy and I am over 21 years of age.</span>
+                                            </label>
+                                        </div>
+                                        <div class="content text-center">
+                                            <a href="#">Forgot Password</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="d-flex">
+                                    <p class="text-center w-100 mb-4 mt-3">
+                                        <span class="text-white">Already Registered?</span>
+                                        <a data-toggle="tab" href="#loginPanel">&nbsp;Login Here</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
